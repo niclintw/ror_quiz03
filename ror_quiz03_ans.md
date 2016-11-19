@@ -1,4 +1,4 @@
-1. 請解釋 database.yml, routes.rb, 和 Gemifle 分別是什麼？ 他們分別在一個 Rails 專案裡的什麼位置？ 他們為什麼對一個 Rails 專案如此重要？
+###1.請解釋 database.yml, routes.rb, 和 Gemifle 分別是什麼？ 他們分別在一個 Rails 專案裡的什麼位置？ 他們為什麼對一個 Rails 專案如此重要？
 
 Answer：
 ```
@@ -17,7 +17,7 @@ Answer：
 
 ***
 
-2. MVC 架構裡的 M, V, 和 C 分別代表什麼？ 
+###2.MVC 架構裡的 M, V, 和 C 分別代表什麼？ 
 
 Answer：
 ```
@@ -27,7 +27,7 @@ Answer：
 ```
 ***
    
-3. 請解釋 CRUD 是哪四個字的縮寫？
+###3.請解釋 CRUD 是哪四個字的縮寫？
 
 Answer：
  ```
@@ -39,7 +39,7 @@ Answer：
  
 ***
    
-4. 請問在 routes.rb 裡面加入以下程式碼會產生出哪一些 url？ (提示：在 browser 輸入```http://localhost:3000/rails/info/routes```)
+###4.請問在 routes.rb 裡面加入以下程式碼會產生出哪一些 url？ (提示：在 browser 輸入```http://localhost:3000/rails/info/routes```)
 	```ruby
 	resources :users
 	```
@@ -48,8 +48,8 @@ Answer：
 
     http://localhost:3000/users 
 
-| HTTP Verb     | PATH (url)      | Controller#Action | 目的                 |
-| :------------ |:---------------:|:-----------------:| --------------------:|
+|    HTTP Verb  |    PATH (url)   | Controller#Action |        目的          |
+| :------------ |:--------------- |:----------------- | :--------------------|
 | GET           | /users          | users#index       | 顯示所有users        |
 | GET           | /users/new      | users#new         | 回傳建立新user的表單 |
 | POST          | /users          | users#create      | 建立新user           |
@@ -60,26 +60,28 @@ Answer：
 
 ***
 
-5. 請解釋 model 檔案和 migration 檔案的差別
+###5.請解釋 model 檔案和 migration 檔案的差別
 
 Answer：
-	```
+
+```
     (1). model可以獲取資料庫裡的資料, 把原不相關的資料庫做連結
     (2). migration可以使用ruby的語法去建立資料庫裡所需要的資料表
-	```
+```
 	
 ***
 
-6. 若今天發現一個 migration 檔寫錯，請問我應該用什麼指令回復到上一個版本的 migration? 
+###6.若今天發現一個 migration 檔寫錯，請問我應該用什麼指令回復到上一個版本的 migration? 
 
 Answer：
+
 ```ruby
     rake db:rollback
 ```
 
 ***
 
-7. 假設今天
+###7.假設今天
 	* 我要在資料庫裡產出一個叫 group 的資料表
 	* 裡面包括的欄位名稱和相對應的資料型別是： 
 		**name (string)**,
@@ -104,7 +106,7 @@ Answer：
 
 ***
 
-8. 請解釋什麼是 ActiveRecord? 
+###8.請解釋什麼是 ActiveRecord? 
 
 Answer：
 ```
@@ -132,7 +134,7 @@ Rails 單複數轉換機制非常強大，能從單數轉複數、複數轉單�
 
 ***
 
-9. 若今天需要為 ```Project``` 和 ```Issue``` 這兩個 Model 建立一對多的關係，請寫出實作上所需要的 migratiion 和 model 檔案 
+###9.若今天需要為 ```Project``` 和 ```Issue``` 這兩個 Model 建立一對多的關係，請寫出實作上所需要的 migratiion 和 model 檔案 
 
 Answer：
   ```ruby
@@ -160,7 +162,7 @@ Answer：
 
 ***
 
-10. 若今天我有以下 model 檔：
+###10.若今天我有以下 model 檔：
 
   ```ruby
   class User < ActiveRecord::Base
@@ -186,7 +188,7 @@ Answer：
 
 ***
 
-11. 延續第10題，如果需要讓一個叫 "Bob" 的使用者產生一個名字叫做 "Rails is Fun" 的社團，應該如何在 rails console 裡實作出來？
+###11.延續第10題，如果需要讓一個叫 "Bob" 的使用者產生一個名字叫做 "Rails is Fun" 的社團，應該如何在 rails console 裡實作出來？
 
 Answer：
   ```ruby
@@ -203,7 +205,7 @@ Answer：
 
 ***
 
-12. 延續第11題，請寫一段程式碼確保使用者在建立新社團時社團名不可以是空白，而且不能超過50個字
+###12.延續第11題，請寫一段程式碼確保使用者在建立新社團時社團名不可以是空白，而且不能超過50個字
 
 Answer：
   ```ruby
